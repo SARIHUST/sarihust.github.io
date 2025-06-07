@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>[CVPR22] Quarantine: Sparsity Can Uncover the Trojan Attack Trigger for Free | Hanhui Wang</title>
+    <meta name="author" content="Hanhui  Wang" />
+    <meta name="description" content="Don't waste your life. Don't waste it.
+" />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☯️</text></svg>">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://sarihust.github.io/cvpr22/2022/06/21/trojan-lth-cvpr22.html">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark" />
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#155799">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/paper.css?v=">
+  </head>
+
+  <!-- Body -->
+  <body class=" sticky-bottom-footer">
+
+    <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/">Hanhui Wang</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">About</a>
+              </li>
+              
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name font-size:250%" style="color:white">[CVPR22] Quarantine: Sparsity Can Uncover the Trojan Attack Trigger for Free</h1>
+      <br>
+      <h2 class="project-tagline" style="color:white">
+<a style="color: #dfebf7" href="https://tianlong-chen.github.io/" target="_blank" rel="noopener noreferrer">Tianlong Chen</a><sup>[1]</sup>*, <a style="color: #dfebf7" href="https://scholar.google.com/citations?user=ZLyJRxoAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer">Zhenyu Zhang</a><sup>[1]</sup>*, <a style="color: #dfebf7" href="https://www.yihua-zhang.com/" target="_blank" rel="noopener noreferrer">Yihua Zhang</a><sup>[2]</sup>*, <a style="color: #dfebf7" href="https://code-terminator.github.io/" target="_blank" rel="noopener noreferrer">Shiyu Chang</a><sup>[3]</sup>, <a style="color: #dfebf7" href="https://lsjxjtu.github.io/" target="_blank" rel="noopener noreferrer">Sijia Liu</a><sup>[2,4]</sup>, <a style="color: #dfebf7" href="https://vita-group.github.io/" target="_blank" rel="noopener noreferrer">Zhangyang Wang</a><sup>[1]</sup>
+</h2>
+      <h2 class="project-tagline" style="color:white">
+<sup>[1]</sup>University of Texas at Austin, <sup>[2]</sup>Michigan State University, <sup>[3]</sup>University of California, Santa Barbara, <sup>[4]</sup>MIT-IBM Watson AI Lab</h2>
+      
+      <a href="https://github.com/VITA-Group/Backdoor-LTH" class="btn" target="_blank" rel="noopener noreferrer">Paper</a>
+      
+      
+      <a href="https://github.com/VITA-Group/Backdoor-LTH" class="btn" target="_blank" rel="noopener noreferrer">Code</a>
+      
+      
+      <a href="https://www.yihua-zhang.com/assets/posters/trojan_lth.pdf" class="btn" target="_blank" rel="noopener noreferrer">Poster</a>
+      
+      
+      
+      
+      
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-5">
+      <h4 id="motivation">Motivation</h4>
+
+<p>As models usually learn “too well” during training - so much that make various types of attacks possible, backdoor attack (or Trojan Attack) has become a real-life threat to the AI model deployed in the real world. At the same time, extensive research work on model pruning has shown that the weights of an overparameterized model (e.g., DNN) can be pruned without hampering its generalization ability. Combining both lines of research, our story begins with the following question:</p>
+
+<center>
+<b>
+
+How does the model sparsity relate to its train-time robustness against Trojan attacks?
+</b>
+<br>
+</center>
+
+<hr>
+
+<h4 id="the-discovery-of-winning-trojan-ticket">The Discovery of ‘Winning Trojan Ticket’</h4>
+
+<p>We start our research by making an observation on the performance change of a backdoored model as we gradually increase the model sparsity with the model pruning technique. More specifically, we would like to see how the clean accuracy (CA) as well as attack success rate (ASR) will change with respect to the increasing sparsity. We plot the curve of CA and ASR w.r.t. sparsity ratio in Figure 1. Some interesting phenomena we listed below indicate that there is a strong connection between model sparsity and Trojan features.</p>
+
+<p>As ASR is constantly higher than CA, and CA drops much faster than ASR, Trojan features learned by backdoored attacks are significantly more stable against pruning than benign features. Therefore, we assume that “Trojan attacks can be uncovered through the pruning dynamics of the Trojan model”. The question remains: how to leverage the ‘stubbornness’ of the Trojan features to detect the Trojan attack itself?</p>
+
+<p>As we further increase the model sparsity, both ASR and CA reasonably fall to a relatively low level. However, at a certain sparsity level, the ASR surges to a conspicuously high level while the CA remains low, which we term the ‘winning Trojan Ticket’, borrowing the idea from LTH-oriented <a href="#refer-anchor-1">[1]</a> iterative magnitude pruning. The performance of the winning Trojan Ticket implies that such a model subnetwork preserves the Trojan attack traces while retaining chance-level performance on clean inputs. In other words, it is a ‘purely bad’ subnetwork.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/posts/backdoor_cvpr22/overview-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/posts/backdoor_cvpr22/overview-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/posts/backdoor_cvpr22/overview-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/posts/backdoor_cvpr22/overview.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption" style="color: #999; font-size:16px; padding: 2px;">
+    Figure 1. An overview of our proposal: Trojan features learned by backdoored attacks are significantly more stable against pruning than benign features. Therefore, Trojan attacks can be uncovered through the pruning dynamics of the Trojan model. Weight pruning identifies the ‘winning Trojan ticket’, which can be used for Trojan detection and recovery. 
+</div>
+
+<p>Leveraging LTH-oriented iterative magnitude pruning (IMP), the ‘winning Trojan Ticket’ can be discovered, which preserves the Trojan attack performance while retaining chance-level performance on clean inputs.</p>
+
+<p>Thus, the existence of the ‘winning Trojan Ticket’ could serve as an indicator of Trojan attacks. However, in real-world applications, it is hard for the users to acquire the ASR (namely the red curve in Figure 1), as the attack information is transparent to the users. Thus, we need to find a substitute indicator for ASR, which does not require any attack information or even clean data.</p>
+
+<p>The winning Trojan ticket can be detected by our proposed linear model connectivity (LMC)-based Trojan score.</p>
+
+<hr>
+
+<h4 id="trojan-score-linear-mode-connectivity-based-trojan-indicator">Trojan Score: Linear Mode Connectivity-based Trojan Indicator</h4>
+
+<p>We adopt Linear Mode Connectivity <a href="#refer-anchor-2">[2]</a> (LMC) to measure the stability of the Trojan ticket \(\phi := (m \odot \theta)\) v.s. the \(k\)-step finetuned Trojan ticket \(\phi := (m \odot \theta^{(k)})\).</p>
+
+<p>We define the Trojan Score as</p>
+
+\[\mathcal{S}_{Trojan} = \max_{\alpha \in [0, 1]} \mathcal{E} (\alpha \phi - (1 - \alpha)\phi_{k}) - \frac{\mathcal{\phi} - \mathcal{\phi_k}}{2}\]
+
+<p>where the first term denotes LMC and the second term an error baseline. \(\mathcal{E}(\phi)\) denotes the training error of the model \(\phi\).</p>
+
+<p>A sparse network with the peak Trojan Score maintains the highest ASR in the extreme pruning regime and is termed as the Winning Trojan Ticket.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/posts/backdoor_cvpr22/pruning_dynamic-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/posts/backdoor_cvpr22/pruning_dynamic-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/posts/backdoor_cvpr22/pruning_dynamic-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/posts/backdoor_cvpr22/pruning_dynamic.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption" style="color: #999; font-size:16px; padding: 2px;">
+    Figure 2. The pruning dynamics of Trojan ticket (dash line) and 10-step finetuned ticket (solid line) on CIFAR-10 with ResNet-20 and gray-scale backdoor trigger. For comparison, the Trojan score is also reported.
+</div>
+
+<hr>
+
+<h4 id="trojan-trigger-reverse-engineer">Trojan Trigger Reverse Engineer</h4>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/posts/backdoor_cvpr22/trigger_l1_norm-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/posts/backdoor_cvpr22/trigger_l1_norm-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/posts/backdoor_cvpr22/trigger_l1_norm-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/posts/backdoor_cvpr22/trigger_l1_norm.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption" style="color: #999; font-size:16px; padding: 2px;">
+    Figure 3. The \(\ell_1\) norm values of recovered Trojan triggers for all labels. The plot title signifies network architecture, trigger type, and the images for reverse engineering on CIFAR-10. Class “1” is the true target label for Trojan attacks. Green check or red cross indicates whether the detected label (with the least \(\ell_1\) norm matches the true target label).
+</div>
+
+<hr>
+
+<h4 id="trigger-reverse-engineer">Trigger Reverse Engineer</h4>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/posts/backdoor_cvpr22/recover_trigger_poster-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/posts/backdoor_cvpr22/recover_trigger_poster-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/posts/backdoor_cvpr22/recover_trigger_poster-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/posts/backdoor_cvpr22/recover_trigger_poster.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" data-zoomable="" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption" style="color: #999; font-size:16px; padding: 2px;">
+    Figure 4. Visualization of recovered Trojan trigger patterns from dense Trojan models (baseline) and winning Trojan tickets. ResNet-20s on CIFAR-10 with RGB triggers are used. The first column shows the random seed images used for trigger recovery.
+</div>
+
+<hr>
+
+<h4 id="citation">Citation</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td>
+<td class="rouge-code"><pre>@inproceedings{chen2022quarantine,
+  title = {Quarantine: Sparsity Can Uncover the Trojan Attack Trigger for Free},
+  author = {Chen, Tianlong and Zhang, Zhenyu and Zhang, Yihua and Chang, Shiyu and Liu, Sijia and Wang, Zhangyang},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages = {598--609},
+  year = {2022}
+}
+</pre></td>
+</tr></tbody></table></code></pre></div></div>
+<hr>
+
+<h4 id="reference">Reference</h4>
+
+<div id="refer-anchor-1"></div>
+<p>[1] Jonathan Frankle et al. “The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks.” ICLR 2019.</p>
+
+<div id="refer-anchor-2"></div>
+<p>[2] Jonathan Frankle et al. “Linear Mode Connectivity and the Lottery Ticket Hypothesis.” ICML 2020.</p>
+
+<div id="refer-anchor-3"></div>
+<p>[3] Ren Wang et al. “Practical detection of trojan neural networks: Data-limited and data-free cases.” ECCV 2020.</p>
+
+    </div>
+
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <center>
+        <div id="clustrmaps-widget" style="width:10%">
+                <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=zP5RUg_lbda1vEJcVf6Y2wExCgt16XQuzyNJY2frl-I"></script>
+        </div>
+      <div class="container">
+        © Copyright 2025 Hanhui  Wang. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a>. Inspired by <a href="https://yihua-zhang.com" target="_blank" rel="noopener noreferrer">Yihua Zhang</a>'s website.
+Last updated: June 07, 2025.
+      </div>
+      </center>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Enable Tooltips -->
+  <script type="text/javascript">
+  $(function () {$('[data-toggle="tooltip"]').tooltip()})
+  </script>
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
+  <script defer src="/assets/js/common.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+
+    window.MathJax = {
+    tex: {
+      tags: 'ams'
+      inlineMath: [['$', '$'], ['\\(', '\\)'], ['!!', '!!']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  <!-- <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']]
+        packages: ['base', 'newcommand', 'configMacros']
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script> -->
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+  </body>
+</html>
