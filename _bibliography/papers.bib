@@ -1,0 +1,46 @@
+---
+---
+@InProceedings{zhu2025struct2dperceptionguidedframeworkspatial,
+  abbr={CVinW'25},
+  selected={true},
+  bibtex_show={true},
+  preview={struct2d.png},
+  html={https://arxiv.org/abs/2506.04220},
+  title={Struct2D: A Perception-Guided Framework for Spatial Reasoning in Large Multimodal Models}, 
+  author={Zhu, Fangrui and Wang, Hanhui and Xie, Yiming and Gu, Jing and Ding, Tianye and Yang, Jianwei and Jiang, Huaizu},
+  year={2025},
+  booktitle={The 4th CVPR Workshop on Computer Vision in the Wild},
+  abstract={
+    Unlocking spatial reasoning in Large Multimodal Models (LMMs) is crucial for enabling intelligent interaction with 3D environments. While prior efforts often rely on explicit 3D inputs or specialized model architectures, we ask: can LMMs reason about 3D space using only structured 2D representations derived from perception? We introduce Struct2D, a perception-guided prompting framework that combines bird's-eye-view (BEV) images with object marks and object-centric metadata, optionally incorporating egocentric keyframes when needed. Using Struct2D, we conduct an in-depth zero-shot analysis of closed-source LMMs (e.g., GPT-o3) and find that they exhibit surprisingly strong spatial reasoning abilities when provided with structured 2D inputs, effectively handling tasks such as relative direction estimation and route planning. Building on these insights, we construct Struct2D-Set, a large-scale instruction tuning dataset with 200K fine-grained QA pairs across eight spatial reasoning categories, generated automatically from 3D indoor scenes. We fine-tune an open-source LMM (Qwen2.5VL) on Struct2D-Set, achieving competitive performance on multiple benchmarks, including 3D question answering, dense captioning, and object grounding. Our approach demonstrates that structured 2D inputs can effectively bridge perception and language reasoning in LMMs-without requiring explicit 3D representations as input. We will release both our code and dataset to support future research.
+  }
+}
+
+
+@InProceedings{wang2025edit,
+  abbr={CVPR'25},
+  selected={true},
+  bibtex_show={true},
+  preview={facelock.png},
+  html={https://arxiv.org/pdf/2411.16832},
+  code={https://github.com/taco-group/FaceLock},
+  poster={posters/CVPR25_FaceLock_Poster.pdf},
+  title =    {Edit Away and My Face Will not Stay: Personal Biometric Defense against Malicious Generative Editing},
+  author =       {Wang, Hanhui and Zhang, Yihua and Bai, Ruizheng and Zhao, Yue and Liu, Sijia and Tu, Zhengzhong},
+  booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2025},
+  abstract =   {Recent advancements in diffusion models have made generative image editing more accessible than ever. While these developments allow users to generate creative edits with ease, they also raise significant ethical concerns, particularly regarding malicious edits to human portraits that threaten individuals’ privacy and identity security. Existing general-purpose image protection methods primarily focus on generating adversarial perturbations to nullify edit effects. However, these approaches often exhibit instability to protect against diverse editing requests. In this work, we introduce a novel perspective to personal human portrait protection against malicious editing. Unlike traditional methods aiming to prevent edits from taking effect, our method, FACELOCK, optimizes adversarial perturbations to ensure that original biometric information—such as facial features—is either destroyed or substantially altered post-editing, rendering the subject in the edited output biometrically unrecognizable. Our approach innovatively integrates facial recognition and visual perception factors into the perturbation optimization process, ensuring robust protection against a variety of editing attempts. Besides, we shed light on several critical issues with commonly used evaluation metrics in image editing and reveal cheating methods by which they can be easily manipulated, leading to deceptive assessments of protection. Through extensive experiments, we demonstrate that FACELOCK significantly outperforms all baselines in defense performance against a wide range of malicious edits. Moreover, our method also exhibits strong robustness against purification techniques. Comprehensive ablation studies confirm the stability and broad applicability of our method across diverse diffusion-based editing algorithms. Our work not only advances the state-of-the-art in biometric defense but also sets the foundation for more secure and privacy-preserving practices in image editing. The code is publicly available at: https://github.com/taco-group/FaceLock.}
+}
+
+@InProceedings{wang2024leveragingsamsinglesourcedomain,
+  abbr={arXiv'2024},
+  selected={true},
+  bibtex_show={true},
+  preview={leveraging_SAM.png},
+  html={https://arxiv.org/pdf/2401.02076},
+  code={https://github.com/sarihust/SAMMed},
+  title =    {Leveraging SAM for Single-Source Domain Generalization in Medical Image Segmentation},
+  author =       {Wang, Hanhui and Huaize, Ye and Yi, Xia and Xueyan, Zhang},
+  booktitle={arXiv},
+  year={2024},
+  abstract =   {Domain Generalization (DG) aims to reduce domain shifts between domains to achieve promising performance on the unseen target domain, which has been widely practiced in medical image segmentation. Single-source domain generalization (SDG) is the most challenging setting that trains on only one source domain. Although existing methods have made considerable progress on SDG of medical image segmentation, the performances are still far from the applicable standards when faced with a relatively large domain shift. In this paper, we leverage the Segment Anything Model (SAM) to SDG to greatly improve the ability of generalization. Specifically, we introduce a parallel framework, the source images are sent into the SAM module and normal segmentation module respectively. To reduce the calculation resources, we apply a merging strategy before sending images to the SAM module. We extract the bounding boxes from the segmentation module and send the refined version as prompts to the SAM module. We evaluate our model on a classic DG dataset and achieve competitive results compared to other state-of-the-art DG methods. Furthermore, We conducted a series of ablation experiments to prove the effectiveness of the proposed method. The code is publicly available at: https://github.com/sarihust/SAMMed.}
+}
