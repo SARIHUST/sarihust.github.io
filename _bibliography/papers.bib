@@ -39,7 +39,7 @@
   html={https://arxiv.org/pdf/2401.02076},
   code={https://github.com/sarihust/SAMMed},
   title =    {Leveraging SAM for Single-Source Domain Generalization in Medical Image Segmentation},
-  author =       {Wang, Hanhui and Huaize, Ye and Yi, Xia and Xueyan, Zhang},
+  author =       {Wang, Hanhui and Ye, Huaize and Xia, Yi and Zhang, Xueyan},
   booktitle={arXiv},
   year={2024},
   abstract =   {Domain Generalization (DG) aims to reduce domain shifts between domains to achieve promising performance on the unseen target domain, which has been widely practiced in medical image segmentation. Single-source domain generalization (SDG) is the most challenging setting that trains on only one source domain. Although existing methods have made considerable progress on SDG of medical image segmentation, the performances are still far from the applicable standards when faced with a relatively large domain shift. In this paper, we leverage the Segment Anything Model (SAM) to SDG to greatly improve the ability of generalization. Specifically, we introduce a parallel framework, the source images are sent into the SAM module and normal segmentation module respectively. To reduce the calculation resources, we apply a merging strategy before sending images to the SAM module. We extract the bounding boxes from the segmentation module and send the refined version as prompts to the SAM module. We evaluate our model on a classic DG dataset and achieve competitive results compared to other state-of-the-art DG methods. Furthermore, We conducted a series of ablation experiments to prove the effectiveness of the proposed method. The code is publicly available at: https://github.com/sarihust/SAMMed.}
