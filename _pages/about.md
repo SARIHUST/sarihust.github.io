@@ -7,6 +7,7 @@ subtitle:
 profile:
   align: right
   image: hhwang_original.png
+  # image: cross_arm.png
   image_circular: false # crops the image to make it circular
   address: >
     <p>Room 472, West Village H</p>
