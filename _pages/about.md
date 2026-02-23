@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: hhwang_original.png
+  image: professional_profile_1.png
   # image: cross_arm.png
   image_circular: false # crops the image to make it circular
   address: >

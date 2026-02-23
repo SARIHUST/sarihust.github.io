@@ -6,8 +6,10 @@
   html={https://arxiv.org/pdf/2510.11565},
   code={https://github.com/neu-vi/SNAP},
   website={https://neu-vi.github.io/SNAP/},
+  talk={slides/SNAP_Talk_NERD.pptx},
+  slides={slides/SNAP_Talk_NERD.pptx},
   title =    {SNAP: Towards Segmenting Anything in Any Point Cloud},
-  author =       {Gupta*, Aniket and Wang*, Hanhui and Saunders, Charles and Chowdhury, Aruni Roy and Singh, Hanumant and Jiang, Huaizu},
+  author =       {Gupta*, Aniket and Wang*, Hanhui and Saunders, Charles and RoyChowdhury, Aruni and Singh, Hanumant and Jiang, Huaizu},
   booktitle={The 13th International Conference on 3D Vision},
   year={2026},
   abstract =   {Interactive 3D point cloud segmentation enables efficient annotation of complex 3D scenes through user-guided prompts. However, current approaches are typically restricted in scope to a single domain (indoor or outdoor), and to a single form of user interaction (either spatial clicks or textual prompts). Moreover, training on multiple datasets often leads to negative transfer, resulting in domain-specific tools that lack generalizability. To address these limitations, we present SNAP (Segment aNything in Any Point cloud), a unified model for interactive 3D segmentation that supports both point-based and text-based prompts across diverse domains. Our approach achieves cross-domain generalizability by training on 7 datasets spanning indoor, outdoor, and aerial environments while employing domain-adaptive normalization to prevent negative transfer. For text-prompted segmentation, we automatically generate mask proposals without human intervention and match them against CLIP embeddings of textual queries, enabling both panoptic and open-vocabulary segmentation. Extensive experiments demonstrate that SNAP consistently delivers high-quality segmentation results. We achieve state-of-the-art performance on 8 out of 9 zero-shot benchmarks for spatial-prompted segmentation and demonstrate competitive results on all 5 text-prompted benchmarks. These results show that a unified model can match or exceed specialized domain-specific approaches, providing a practical tool for scalable 3D annotation.}
