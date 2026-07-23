@@ -2,3 +2,4 @@ post_ignore
 .DS_Store
 vendor/
 .bundle/
+cv/
