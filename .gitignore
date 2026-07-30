@@ -3,3 +3,5 @@ post_ignore
 vendor/
 .bundle/
 cv/
+_site/
+.jekyll-cache/

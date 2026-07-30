@@ -1,41 +1,81 @@
-# "Liu"
-#   - firstname: ["Sijia"]
-#     url: https://lsjxjty.github.io
+"Jiang":
+  - firstname: ["Huaizu"]
+    url: https://jianghz.me/
 
-# "Chang"
-#   - firstname: ["Shiyu"]
-#     url: https://code-terminator.github.io/
+"Xie":
+  - firstname: ["Yiming"]
+    url: https://ymingxie.github.io/
 
-# "Hong"
-#   - firstname: ["Mingyi"]
-#     url: https://people.ece.umn.edu/~mhong/mingyi.html
+"Feng":
+  - firstname: ["Haiwen"]
+    url: https://havenfeng.github.io/
 
-"Wang"
-  - firstname: ["Zhangyang"]
-    url: https://vita-group.github.io/
+"Lv":
+  - firstname: ["Zhaoyang"]
+    url: https://lvzhaoyang.github.io/
 
-# "Chen"
-#   - firstname: ["Pin-Yu"]
-#     url: https://tianlong-chen.github.io/about/
+"Wang":
+  - firstname: ["Shenlong"]
+    url: https://shenlong.web.illinois.edu/
 
-#   - firstname: ["Tianlong"]
-#     url: https://tianlong-chen.github.io/about/
+"Gupta":
+  - firstname: ["Aniket"]
+    url: https://aniket-gupta1.github.io/
 
-"Zhang"
-  - firstname: ["Guanhua"]
-    url: https://ghzhang233.github.io/
+"Saunders":
+  - firstname: ["Charles"]
+    url:
 
-  - firstname: ["Zhenyu"]
-    url: https://scholar.google.com/citations?user=ZLyJRxoAAAAJ&hl=en
+"RoyChowdhury":
+  - firstname: ["Aruni"]
+    url: https://arunirc.github.io/
 
-  - firstname: ["Gaoyuan"]
-    url: https://mitibmwatsonailab.mit.edu/people/gaoyuan-zhang/
+"Singh":
+  - firstname: ["Hanumant"]
+    url:
 
-"Lu"
-  - firstname: ["Songtao"]
-    url: https://sites.google.com/site/lusongtaoee
+"Zhu":
+  - firstname: ["Fangrui"]
+    url: https://fangruizhu.github.io/
 
-"Martie"
-  - firstname: ["Lee"]
-    url: https://mitibmwatsonailab.mit.edu/people/lee-martie/
+"Gu":
+  - firstname: ["Jing"]
+    url: https://g-jing.github.io/
 
+"Ding":
+  - firstname: ["Tianye"]
+    url: https://jerrygcding.github.io/
+
+"Yang":
+  - firstname: ["Jianwei"]
+    url: https://jwyang.github.io/
+
+"Zhang":
+  - firstname: ["Yihua"]
+    url: https://yihua-zhang.com/
+  - firstname: ["Xueyan"]
+    url:
+
+"Bai":
+  - firstname: ["Ruizheng"]
+    url:
+
+"Zhao":
+  - firstname: ["Yue"]
+    url: https://viterbi-web.usc.edu/~yzhao010/
+
+"Liu":
+  - firstname: ["Sijia"]
+    url:
+
+"Tu":
+  - firstname: ["Zhengzhong"]
+    url: https://vztu.github.io/
+
+"Ye":
+  - firstname: ["Huaize"]
+    url:
+
+"Xia":
+  - firstname: ["Yi"]
+    url:

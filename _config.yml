@@ -160,6 +160,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - Dockerfile
+  - jekyll-theme-cayman.gemspec
+  - README.md
+  - CONTRIBUTING.md
 keep_files:
   - CNAME
   - .nojekyll

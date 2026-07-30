@@ -2,103 +2,135 @@
   type: map
   contents:
     - name: Full Name
-      value: Yihua Zhang
-    - name: Date of Birth
-      value: 9th July
-    - name: Languages
-      value: Chinese, English, German
+      value: Hanhui Wang (王翰辉)
 
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D. Student in Computer Science
-      institution: Michigan State University, USA
-      year: 2022 - now
+    - title: Ph.D. in Computer Science
+      institution: Khoury College of Computer Sciences, Northeastern University (NEU)
+      year: Sept. 2025 - Present
       description:
-        - title: Trustworthy Machine Learning
-          contents:
-              - Model Robustness (Adversarial Robustness, Backdoor Attacks, Out-of-Distribution, etc.)
-              - Model Fairness
-              - Machine Unlearning (Copyright infringement, Harmful Content Removal)
-        - title: Scalable Machine Learning
-          contents:
-            - Efficient Model (Model Pruning, Mixture-of-Expert, On-Device Training)
-            - Efficient Data (Data Distillation, Coreset Selection)
-        - title: Foundation Algorithm Development
-          contents:
-            - Bi-Level Optimization
-            - Zeroth-Order Optimization
-            - Invariant Risk Minimization
-            - Distribution Machine Learning
+        - "Advisor: Prof. Huaizu Jiang"
+    - title: M.S. in Computer Science
+      institution: Viterbi School of Engineering, University of Southern California (USC)
+      year: Aug. 2023 - May 2025
+      description:
+        - "GPA 4.0/4.0"
+    - title: B.Eng. in Computer Science and Technology
+      institution: School of Computer Science & Technology (SCST), Huazhong University of Science and Technology (HUST)
+      year: Sept. 2019 - June 2023
+      description:
+        - "GPA 3.99/4.0, Rank 2/363"
+        - "Selected by SCST for a special class for the most promising students"
 
-    - title: B.Eng. in Mechanical Engineering
-      institution: Huazhong University of Science and Technology, China
-      year: 2015-2019
-
-- title: Internship Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Research Scientist Internship
-      institution: Meta AI
-      year: 09/2024-Current
-      description: Effective multi-agent system for recommendation
-    - title: Research Scientist Intern
-      institution: Cisco Research
-      year: 11/2023-08/2024
-      description: Investigate efficient and effective machine unlearning algorithms for foundation models, including Large Language Models (LLMs), Diffusion Models (DMs), and Mixture-of-Experts (MoEs).
-    - title: Applied Scientist Intern
-      institution: Amazon AWS
-      year: 05/2023-08/2023
-      description: Investigate the in-context learning for vision generative models, including its design, training, and generalization ability.
-    - title: Research Internship
-      institution: JD AI Research
-      year: 01/2021-08/2021
-      description: Develop algorithms to enhance the robustness and the fairness of the AI algorithms, such as facial recognition, ORC, object detection. Implement and release the new designed algorithms to the JD corperation for intern use or as part of the commercial APIs.
+    - title: Research Assistant
+      institution: Visual Intelligence Lab, Northeastern University — Advisor Prof. Huaizu Jiang
+      year: June 2024 - Aug. 2025
+      description:
+        - "Introduced SNAP, the first unified segmentation model capable of handling diverse point cloud domains (indoor, outdoor, aerial) while supporting versatile prompt types such as spatial points (clicks) and text for flexible object segmentation."
+        - "Introduced Struct2D, a perception-guided prompting framework that unlocks spatial reasoning in Multimodal Large Language Models (MLLMs) using structured 2D representations."
+    - title: Research Assistant
+      institution: TACO Group, Texas A&M University — Advisor Prof. Zhengzhong Tu
+      year: June 2024 - Dec. 2024
+      description:
+        - "Presented a novel perspective for protecting personal images from malicious editing, focusing on making biometric features unrecognizable post editing."
+        - "Developed FaceLock, an algorithm incorporating facial recognition models and feature embedding penalties to effectively protect against diffusion-based image editing."
+        - "Conducted a crucial analysis of the quantitative evaluation metrics commonly used in image editing tasks, exposing their vulnerabilities and highlighting the potential for manipulation to achieve deceptive results."
+    - title: Research Assistant
+      institution: Embedded and Pervasive Computing Lab, HUST — Advisor Prof. Xianzhi Li
+      year: Sept. 2022 - Mar. 2023
+      description:
+        - "Modified a few-shot learning framework for 3D Instance Segmentation (3DIS) to address the high cost of collecting sufficient annotated point clouds."
+        - "Utilized a Transformer Decoder to generate differentiated kernels to perform instance-wise dynamic convolution."
+        - "Implemented the model using Python and PyTorch, improving mean Average Precision (mAP) by 3.2 percent on the ScanNet V2 dataset."
 
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/NormalUhr/Fast_BAT">Fast-BAT</a>
-#       year: 2021
-#       description: A fast bi-level optimization-based adversarial training framework.
+- title: Working Experience
+  type: time_table
+  contents:
+    - title: Assistant Algorithm Engineer
+      institution: Research & Development Group (RDG), iFLYTEK
+      year: May 2023 - July 2023
+      description:
+        - "Worked on a 3D Instance Segmentation project combining clustering- and Transformer-based methods, achieving 0.796 on the ScanNet V2 AP50 benchmark (surpassing the prior state-of-the-art of 0.787)."
+        - "Modified the indoor scene instance segmentation model to improve performance on outdoor scene datasets."
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2024
-      items:
-        - 2024 MLCommons ML and Systems Rising Stars sponsored by Nvidia
     - year: 2023
       items:
-        - AAAI 2023 Travel Award 
-        - NeurIPS Scholar Award
-        - NeurIPS Top Reviewer 
-        - CVPR 2023 Outstanding Reviewer
+        - Outstanding Graduates of HUST
     - year: 2022
-      items: 
-        - Best Paper Runner-up Awards, UAI 2022
-        - NeurIPS Scholar Award
-        - NeurIPS Top Reviewer
-        - ICML 2022 Travel Grant Award
-    - year: 2017
-      items: 
-        - National Scholarship
-    - year: 2016
-      items: 
-        - National Scholarship
-      
+      items:
+        - Merit Student of HUST
+    - year: 2021
+      items:
+        - Merit Student of HUST
+    - year: 2020
+      items:
+        - "China National Scholarship (the highest national-wide scholarship for undergraduate students in China)"
+        - "Outstanding Undergraduates in Term of Academic Performance (the greatest honor for undergraduates in HUST)"
+        - Merit Student of HUST
+
 - title: Professional Services
   type: list
   contents:
-    - <u>Conference Reviewer:</u> CVPR, ICLR, ICML, NeurIPS, ICCV/ECCV, AISTATS, UAI
-    - <u>Journal Reviewer:</u> TMLR, T-PAMI, T-IFS, 
-    - Student chair of ICML’22 Workshop AdvML (<a href="https://advml-frontier.github.io/past/icml2022/">New Frontiers in Adversarial Machine Learning</a>).
-    - Student chair of ICML'23 Workshop AdvML (<a href="https://advml-frontier.github.io/past/icml2023/">New Frontiers in Adversarial Machine Learning</a>).
-    - Student chair of NeurIPS'24 Workshop AdvML (<a href="https://advml-frontier.github.io/">New Frontiers in Adversarial Machine Learning</a>).
+    - <u>Conference Reviewer:</u> CVPR, CVPR Workshop, 3DV, ECCV, SIGGRAPH Asia
+    - <u>Journal Reviewer:</u> TOG
 
-- title: Tutorials/Talk
+- title: Talks
+  type: nested_list
+  contents:
+    - title: "SNAP: Towards Segmenting Anything in Any Point Cloud (Feb. 2026)"
+      items:
+        - Invited talk at the Boston AI, ML, and Computer Vision Meetup, Microsoft Research New England (NERD)
+    - title: "Struct2D: A Perception-Guided Framework for Spatial Reasoning in MLLMs"
+      items:
+        - "Oral Presentation, New England Computer Vision (NECV) Workshop, UMass Amherst — Nov. 2025"
+        - "Spotlight Presentation, CVPR Workshop on Computer Vision in the Wild (CVinW), Nashville — June 2025"
+
+- title: Teaching Experience
   type: list
   contents:
-    - "AAAI 2024 Tutorial, Zeroth-Order Machine Learning: Fundamental Principles and Emerging Applications in Foundation Models"
-    - "AAAI 2023 Tutorial, Bi-level Optimization in Machine Learning: Foundations and Applications"
-    - "Talk at INFORMS Annual Meeting 2022, Advancing Algorithmic Foundation of Robust Deep Learning through the Lens of Bi-level Optimization"
+    - "Teaching Assistant, CS7150 Deep Learning, Northeastern University — Spring 2026"
+
+- title: Projects
+  type: time_table
+  contents:
+    - title: Single-Source Domain Generalization Project
+      year: Oct. 2023 - Dec. 2023
+      description:
+        - "Led a team of 4 through a semester-long research project applying the Segment Anything Model (SAM) to Single-Source Domain Generalization for Medical Image Segmentation, resulting in a first-author preprint."
+        - "Set the technical direction (dual-stage fine-tuning paradigm, mask-filtering module) and coordinated task allocation, manuscript drafting, and poster creation across the team."
+        - "Achieved state-of-the-art results on the Prostate dataset, 8% above the prior best."
+    - title: Stock Management Website
+      year: Mar. 2024 - Apr. 2024
+      description:
+        - "Designed and implemented the frontend using HTML5, Bootstrap, and Angular; engineered the backend with Node.js, including server-side logic, database integration, and API handling."
+        - "Managed a cloud-based MongoDB database and deployed the site on Google Cloud Platform (GCP)."
+    - title: Stock Management Android App
+      year: Apr. 2024 - May 2024
+      description:
+        - "Developed a stock management Android application using Android Studio, refactoring the Node.js backend for mobile use."
+        - "Utilized Volley and Picasso to handle multiple HTTP requests."
+    - title: Jigsaw Puzzle Project
+      year: Nov. 2021 - Dec. 2021
+      description:
+        - "Led a group of 4 to develop a jigsaw puzzle game-playing website using JavaScript and the Paper.js graphics framework."
+        - "Designed a novel magnetic mode for fun-seeking users, deployed the site on a cloud server, and adapted it for different PC and mobile devices."
+
+- title: Skills
+  type: map
+  contents:
+    - name: Programming Languages
+      value: Python, C/C++, Java, JavaScript
+    - name: ML/DL Frameworks
+      value: PyTorch, CUDA
+    - name: Tools & Platforms
+      value: Git, Docker, Conda, Linux/Shell
+    - name: Web Development
+      value: Node.js, Angular, MongoDB
