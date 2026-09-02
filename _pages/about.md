@@ -23,7 +23,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
-Hanhui Wang (王翰辉) is a first-year Ph.D. student at the Visual Intelligence Lab at **Northeastern University** (NEU), where he is supervised by [Prof. Huaizu Jiang](https://jianghz.me/). His research centers on *generation* and *reasoning* in AI systems, with current interests in controllable video generation, multimodal learning, and 3D/4D vision. His long-term goal is to bridge generative modeling and scene understanding toward building *world models* capable of causal reasoning and high-fidelity simulation of complex human-scene interactions.
+Hanhui Wang (王翰辉) is a second-year Ph.D. student at the Visual Intelligence Lab at **Northeastern University** (NEU), where he is supervised by [Prof. Huaizu Jiang](https://jianghz.me/). His research centers on *generation* and *reasoning* in AI systems, with current interests in controllable video generation, multimodal learning, and 3D/4D vision. His long-term goal is to bridge generative modeling and scene understanding toward building *world models* capable of causal reasoning and high-fidelity simulation of complex human-scene interactions.
 
 Prior to joining NEU, he received his bachelor's degree from **Huazhong University of Science and Technology** (HUST) and his master's degree from the **University of Southern California** (USC). He has had the honor of collaborating with [Prof. Xianzhi Li](https://nini-lxz.github.io/), [Prof. Zhengzhong Tu](https://vztu.github.io/), and [Prof. Huaizu Jiang](https://jianghz.me/) on research spanning diverse areas of computer vision. 
 <!-- He also gained valuable industry experience through internships at leading technology companies such as [iFLYTEK](https://www.iflytek.com/en/). -->
